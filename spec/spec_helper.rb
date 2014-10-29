@@ -20,6 +20,7 @@ require 'spork'
 Spork.prefork do
   require 'rspec'
   require 'simplecov'
+  require 'pp'
   require 'pry'
   require 'pry-byebug'
 
