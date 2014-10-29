@@ -96,3 +96,14 @@ Spork.prefork do
     Kernel.srand config.seed
   end
 end
+
+# Spork.each_run do
+#   # This code will be run each time you run your specs.
+#   Dir["./spec/support/**/*.rb"].sort.each {|f| require f}
+#
+#   # Require Ruby files under the lib directory
+#   RSpec.configure do |config|
+#     base_dir = File.expand_path("../../", __FILE__)
+#     Dir["#{base_dir}/lib/**/*.rb"].each {|f| require f}
+#   end
+# end
