@@ -12,7 +12,10 @@ RSpec.describe "Dayplan::Plan" do
       expect { subject }.not_to raise_error
     end
 
-    it "accepts a date to act on"
+    it "accepts a date to act on" do
+      expect( Dayplan::Plan ).to receive(:new).with( { acting_date: date } )
+      subject
+    end
 
     it "defaults the date if acting_date isn't provided"
   end
