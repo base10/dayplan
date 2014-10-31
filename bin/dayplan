@@ -8,7 +8,7 @@ args        = Hash.new
 
 args[:acting_date] = passed_date if passed_date
 
-dayplan     = Dayplan::Plan.new( args )
+dayplan = Dayplan::Plan.new( args )
 
 dayplan.create
 #dayplan.archive
