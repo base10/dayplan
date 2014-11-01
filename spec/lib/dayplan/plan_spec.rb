@@ -17,7 +17,9 @@ RSpec.describe "Dayplan::Plan" do
       subject
     end
 
-    it "defaults the date if acting_date isn't provided"
+    it "defaults the date if acting_date isn't provided" do
+      expect { Dayplan::Plan.new( {} ) }.not_to raise_error
+    end
   end
 
   describe "plan creation" do
