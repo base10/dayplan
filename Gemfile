@@ -13,6 +13,7 @@ gem "guard-bundler"
 gem "guard-rspec"
 gem "guard-spork"
 gem "pry-byebug"
+gem "rubocop", require: false
 
 gem 'terminal-notifier-guard'
 gem "rb-fsevent", :require => false if RUBY_PLATFORM =~ /darwin/i
