@@ -9,7 +9,7 @@ module Dayplan
     attr_reader :acting_date, :output_path, :warm_storage_path, :cold_storage_path
     attr_reader :current_files, :warm_storage_files
 
-    def initialize( options )
+    def initialize( options = {} )
       @acting_date = options.fetch('acting_date') { DateTime.now }
     end
 

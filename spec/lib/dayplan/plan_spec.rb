@@ -19,6 +19,7 @@ RSpec.describe "Dayplan::Plan" do
 
     it "defaults the date if acting_date isn't provided" do
       expect { Dayplan::Plan.new( {} ) }.not_to raise_error
+      expect { Dayplan::Plan.new }.not_to raise_error
     end
   end
 
