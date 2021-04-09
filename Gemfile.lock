@@ -22,7 +22,7 @@ GEM
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    ffi (1.9.6)
+    ffi (1.15.0)
     formatador (0.2.5)
     guard (2.6.1)
       formatador (>= 0.2.4)
@@ -106,7 +106,6 @@ DEPENDENCIES
   guard-spork
   pry-byebug
   rake
-  rb-fsevent
   rspec (~> 3.1.0)
   rubocop
   simplecov
